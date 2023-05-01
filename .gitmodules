@@ -2,17 +2,19 @@
 	path = seal_fhe/SEAL
 	url = git@github.com:rickwebiii/SEAL.git
 	branch = wasm
-  fetchRecurseSubmodules = true
+        fetchRecurseSubmodules = true
 [submodule "emsdk/emsdk"]
 	path = emsdk/emsdk
 	url = https://github.com/emscripten-core/emsdk.git
 [submodule "mdBook"]
 	path = mdBook
 	url = git@github.com:rickwebiii/mdBook.git
+        update = none
 [submodule "rust-playground"]
 	path = rust-playground
 	url = git@github.com:Sunscreen-tech/rust-playground.git
-  branch = sunscreen
+        branch = sunscreen
+        update = none
 [submodule "sunscreen_bulletproofs"]
 	path = sunscreen_bulletproofs
 	url = git@github.com:Sunscreen-tech/bulletproofs_zkcrypto.git
