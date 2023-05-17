@@ -1,0 +1,6 @@
+project: Sunscreen
+target: multiply
+duration: 300
+
+cmds:
+  - cmd: /multiply
