@@ -9,6 +9,7 @@ ADD . /Sunscreen/
 
 WORKDIR /Sunscreen/fuzz/
 
+ENV RUSTFLAGS="-D warnings"
 RUN cargo +nightly fuzz build
 
 FROM --platform=linux/amd64 rustlang/rust:nightly
