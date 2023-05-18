@@ -10,9 +10,13 @@ cargo-fuzz = true
 
 [dependencies]
 libfuzzer-sys = "0.4"
+curve25519_dalek = { package = "sunscreen_curve25519", path = "../sunscreen_curve25519", features = ["serde", "u64_backend"], default-features = false }
 
 [dependencies.sunscreen]
 path = "../sunscreen"
+
+[dependencies.sunscreen_math]
+path = "../sunscreen_math"
 
 [workspace]
 members = ["."]
@@ -20,3 +24,7 @@ members = ["."]
 [[bin]]
 name = "multiply"
 path = "fuzz_targets/multiply.rs"
+
+[[bin]]
+name = "cpu_scalar"
+path = "fuzz_targets/cpu_scalar.rs"

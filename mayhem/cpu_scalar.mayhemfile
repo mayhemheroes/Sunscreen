@@ -1,0 +1,6 @@
+project: Sunscreen
+target: cpu_scalar
+duration: 300
+
+cmds:
+  - cmd: /cpu_scalar

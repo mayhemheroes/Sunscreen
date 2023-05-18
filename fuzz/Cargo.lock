@@ -1360,6 +1360,8 @@ version = "0.1.0"
 dependencies = [
  "libfuzzer-sys",
  "sunscreen",
+ "sunscreen_curve25519",
+ "sunscreen_math",
 ]
 
 [[package]]
@@ -1442,6 +1444,16 @@ dependencies = [
  "static_assertions",
  "sunscreen_compiler_common",
  "thiserror",
+]
+
+[[package]]
+name = "sunscreen_math"
+version = "0.1.0"
+dependencies = [
+ "lazy_static",
+ "rand",
+ "rayon",
+ "sunscreen_curve25519",
 ]
 
 [[package]]

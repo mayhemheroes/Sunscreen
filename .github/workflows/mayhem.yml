@@ -55,6 +55,7 @@ jobs:
       matrix:
         mayhemfile:
         - mayhem/multiply.mayhemfile
+        - mayhem/cpu_scalar.mayhemfile
     steps:
     - uses: actions/checkout@v3
     - name: Start analysis for ${{ matrix.mayhemfile }}
