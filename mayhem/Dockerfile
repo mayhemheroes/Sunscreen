@@ -17,3 +17,5 @@ FROM --platform=linux/amd64 rustlang/rust:nightly
 COPY --from=builder /Sunscreen/fuzz/target/x86_64-unknown-linux-gnu/release/multiply /
 
 COPY --from=builder /Sunscreen/fuzz/target/x86_64-unknown-linux-gnu/release/cpu_scalar /
+
+COPY --from=builder /Sunscreen/fuzz/target/x86_64-unknown-linux-gnu/release/cpu_ristretto_point /

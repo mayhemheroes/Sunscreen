@@ -28,3 +28,9 @@ path = "fuzz_targets/multiply.rs"
 [[bin]]
 name = "cpu_scalar"
 path = "fuzz_targets/cpu_scalar.rs"
+
+[[bin]]
+name = "cpu_ristretto_point"
+path = "fuzz_targets/cpu_ristretto_point.rs"
+test = false
+doc = false
