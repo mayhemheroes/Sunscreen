@@ -9,7 +9,7 @@ ADD . /Sunscreen/
 
 WORKDIR /Sunscreen/fuzz/
 
-RUN git submodule update --init --recursive
+ENV RUSTFLAGS="--cap-lints warn"
 RUN cargo +nightly fuzz build
 
 FROM --platform=linux/amd64 rustlang/rust:nightly
