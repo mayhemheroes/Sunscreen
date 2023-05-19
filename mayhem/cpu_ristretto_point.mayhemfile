@@ -1,0 +1,6 @@
+project: Sunscreen
+target: cpu_ristretto_point
+duration: 300
+
+cmds:
+  - cmd: /cpu_ristretto_point
